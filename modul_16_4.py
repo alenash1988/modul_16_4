@@ -8,9 +8,9 @@ users = []
 
 
 class User(BaseModel):
-    id = int
-    username = str
-    age = int
+    id: int
+    username: str
+    age: int
 
 
 @app.get("/users", response_model=List[User])
